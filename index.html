@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <section>
+        <div class="left-pokedex">
+            <div class="container-img">
+                <div class="info-img">
+                    <img src="./assets/title-pokedex.png" alt="pokedex" id="pokeImg"  width="100px" height="100px">
+                    <p id="name"></p>
+                </div>
+            </div>
+            <input type="text" name="nombrePokemon" id="nombrePokemon"> <br>
+            <button type="submit" onclick="getPokemon()">Buscar Pokemon</button>
+        </div>
+        <div class="right-pokedex">
+            <div class="info-pokemon">
+                <p id="types">TIPO: </p>
+                <p id="stats">ESTADISTICAS: </p>
+                <div class="container-stats">
+                    <div class="info-stat">
+                        <div class="graf-stat" id="hp">
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                        </div>
+                        <p>PS</p>
+                    </div>
+                    <div class="info-stat">
+                        <div class="graf-stat" id="attack">
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                        </div>
+                        <p>ATK</p>
+                    </div>
+                    <div class="info-stat">
+                        <div class="graf-stat" id="defense">
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                        </div>
+                        <p>DEF</p>
+                    </div>
+                    <div class="info-stat">
+                        <div class="graf-stat" id="special-attack">
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                        </div>
+                        <p>SP.ATK</p>
+                    </div>
+                    <div class="info-stat">
+                        <div class="graf-stat" id="special-defense">
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                        </div>
+                        <p>SP.DEF</p>
+                    </div>
+                    <div class="info-stat">
+                        <div class="graf-stat" id="speed">
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                            <div class="bar bar-white"></div>
+                        </div>
+                        <p>SPEED</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-info-moves" id="info-moves">
+                <p id="moves">MOVIMIENTOS: </p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./app.js"></script>
+</html>
